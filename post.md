@@ -2,24 +2,16 @@
 
 We'll build a website that allows you to create a motivational poster using an image and text that the user inputs.
 
-![twain](https://github.com/makersacademy/course/raw/master/day_one/images/twain.png)
+![twain](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/twain.png)
 
 This is what the website will look like when you build it.
 
-![motivational](https://github.com/makersacademy/course/raw/master/day_one/images/motivational_sample.png)
+![motivational](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/motivational_sample.png)
 
 You're strongly encouraged to type in all code instead of copy-pasting it. This will really help your understanding of how everything works.
 
 We can't stress this enough. Copy and Paste is the DEVIL!! Even though at times you will be copying chunks of code, the simple process of typing it yourself will help you learn. Trust us. You can't cut corners.
 
-## What you'll need
-
-1. [Google Chrome browser](http://www.google.co.uk/chrome/). It's very well suited to web development ( _Safari; bundled with your Mac will do fine as well though_ ).
-2. [SublimeText editor](http://www.sublimetext.com). This is a very convenient text editor that we'll be using.
-3. Make sure you know how to run Terminal (it's already installed on every Mac). Find it in your Applications (in the Utilities folder) and launch it. ![finder](https://github.com/makersacademy/course/raw/master/day_one/images/finder.png)
-4. XCode command line tools (:pill: [Installing XCode](https://github.com/makersacademy/course/blob/master/pills/installing_xcode.md) ).
-5. Once you have installed XCode, install Heroku Toolbelt from https://toolbelt.heroku.com/ 
-6. Install RVM (:pill: [Installing RVM](https://github.com/makersacademy/course/blob/master/pills/installing_rvm.md) ).
 
 ## Version 0: Create a walking skeleton
 
@@ -27,13 +19,13 @@ Create a new directory on your desktop called "motivational-posters" (note the h
 
 You should see a window like this.
 
-![subl](https://github.com/makersacademy/course/raw/master/day_one/images/subl.png)
+![subl](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/subl.png)
 
 This is the directory where all our files for our web page will be stored. Let's begin by creating a file called app.rb. The .rb extension means that this is going to be a Ruby file. Ruby is a programming language that many websites are built with. Today we'll be using a tiny bit of Ruby but our website will be built using mostly Javascript – another programming language.
 
 Right click the folder name and create a new file.
 
-![new_file](https://github.com/makersacademy/course/raw/master/day_one/images/new_file.png)
+![new_file](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/new_file.png)
 
 Sublime Text will create an untitled file first. Press `Cmd-S` to save it as app.rb.
 
@@ -51,7 +43,7 @@ We'll get back to what this means in a second. Let's see if it works first.
 
 Open the Terminal. It will look like this.
 
-![term](https://github.com/makersacademy/course/raw/master/day_one/images/term.png)
+![term](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/term.png)
 
 The Terminal is a text-based interface for interacting with your computer. It's also called the command line, the shell or the CLI (command-line interface). It's used by all web developers on a daily basis. It may seem strange to use a text-based interface at first (after all, we've got beautiful graphical interface on a Mac) but it's actually very convenient once you get used to it.
 
@@ -63,7 +55,7 @@ Note that there's a space after cd. The cd commands stands for "change directory
 
 Now that we're in the motivational-posters directory, let's install some more software that we'll need. First, type ruby -v to make sure you've got Ruby installed. The Terminal should look like this.
 
-![term_ruby](https://github.com/makersacademy/course/raw/master/day_one/images/term_ruby.png)
+![term_ruby](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/term_ruby.png)
 
 In this case, the version of Ruby is 2.0.0.p0. If yours is different, for example, 1.9.3 or 1.8.6 it isn't a problem. If you don't see the version number, it means you haven't got Ruby installed and you need to go back to the installation instructions.
 
@@ -73,7 +65,7 @@ Now let's install the software that we'll need. To build a website, we'll need s
 
 You should see something like this (it may take a minute).
 
-![sinatra_gem](https://github.com/makersacademy/course/raw/master/day_one/images/sinatra_gem.png)
+![sinatra_gem](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/sinatra_gem.png)
 
 Now that you've got Sinatra, let's launch our "Hello, world" website. Type this in the Terminal to run the app.rb file.
 
@@ -81,11 +73,11 @@ Now that you've got Sinatra, let's launch our "Hello, world" website. Type this 
 
 Now you're telling your Ruby to execute the file that we've created earlier.  You should see this in the Terminal (the previous lines that we typed were cleared because they are no longer relevant).
 
-![sinatra](https://github.com/makersacademy/course/raw/master/day_one/images/sinatra.png)
+![sinatra](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/sinatra.png)
 
 This message means that your website is up and running at the address `localhost:4567` (note the last line). This is a special address that is used for running websites locally. (If your website starts on the address `localhost:3000`, it's ok as well, just use that address). Now open a new browser window and type this address in. You should see "Hello, world".
 
-![localhost](https://github.com/makersacademy/course/raw/master/day_one/images/localhost.png)
+![localhost](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/localhost.png)
 
 If you see this, you've just made your first step towards developing your first website! This doesn't look like a website yet but it's actually a fully functioning website that we'll be extending and improving until we are happy with the result.
 
@@ -103,7 +95,7 @@ As we mentioned above, this is a Ruby file, that is, a programme written in a pr
 
 Let's practice changing this page. Go back to the terminal and stop your server by pressing Ctrl-C. You should see "Sinatra has ended his set" message.
 
-![sinatra_stop](https://github.com/makersacademy/course/raw/master/day_one/images/sinatra_stop.png)
+![sinatra_stop](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/sinatra_stop.png)
 
 Now go back to app.rb in Sublime Text and change the text to "Motivational Posters". Pay attention to the quotes around the text, they are important and they must be the same, that is, either single or double quotes but both of the same type.
 
@@ -121,7 +113,7 @@ Now go back to the terminal and start your website again.
 
 Refresh the page in the browser and you should see the new text.
 
-![motivational](https://github.com/makersacademy/course/raw/master/day_one/images/motivational.png)
+![motivational](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/motivational.png)
 
 **That was all for our first version, great job!**
 
@@ -133,11 +125,11 @@ HTML stands for Hypertext Markup Language. This is the language that is used to 
 
 It's inconvenient to put our HTML right into app.rb. It will be easier to create a separate file. Just like you created app.rb in Sublime Text, create a folder called `views` and a file index.erb inside it. Your project now should look like this.
 
-![index_erb](https://github.com/makersacademy/course/raw/master/day_one/images/index_erb.png)
+![index_erb](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/index_erb.png)
 
 Why don't we move the text `"Motivational Posters"` from our app.rb into this file?
 
-![index_erb_motivational](https://github.com/makersacademy/course/raw/master/day_one/images/index_erb_motivational.png)
+![index_erb_motivational](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/index_erb_motivational.png)
 
 One last thing we need to do is to tell the app.rb file to actually use this file. Update your Ruby code to this.
 
@@ -184,7 +176,7 @@ Replace the contents of the index.erb with this HTML code.
 
 Go back to the browser (no need to restart the website this time, it's only necessary if you modify app.rb). You should see this.
 
-![localhost_motivational](https://github.com/makersacademy/course/raw/master/day_one/images/localhost_motivational.png)
+![localhost_motivational](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/localhost_motivational.png)
 
 If you see this, you know you're on the right track: your website is up and running and it loads HTML code from index.erb.
 
@@ -194,25 +186,25 @@ CSS (stands for Cascading Style Sheets) is the technology that is used to define
 
 Let's choose the background for our website first. Go to [Subtle Patterns](http://subtlepatterns.com) and choose any background that you like. It will help if your background is light, and not dark. Download the background you chose from the website and unzip it. There will be two images there and a `readme` file. For example, this is the background I chose (unzipped).
 
-![ricepaper](https://github.com/makersacademy/course/raw/master/day_one/images/ricepaper.png)
+![ricepaper](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/ricepaper.png)
 
 Take the smaller of the two images (ricepaper_v3.png) in this example and put it in the `public/images` folder in motivational-posters directory (use Finder to do it). You'll need to create the folders `public` and `images` first. After you do this, your project will look like this.
 
-![index_erb2](https://github.com/makersacademy/course/raw/master/day_one/images/index_erb_2.png)
+![index_erb2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/index_erb_2.png)
 
 Now let's set this image as the background for our website. Update line 6 in index.erb to do this.
 
-![index_erb3](https://github.com/makersacademy/course/raw/master/day_one/images/index_erb_3.png)
+![index_erb3](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/index_erb_3.png)
 
 We have just added some CSS code to tell the browser that the body of our page, that is, everything that's visible on the screen, should use the file that we put into the images folder as the background image. Our page now looks like this.
 
-![browser1](https://github.com/makersacademy/course/raw/master/day_one/images/browser_1.png)
+![browser1](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/browser_1.png)
 
 I bet you can see where it's going. By adding various CSS rules one after another we will make our website look good in almost no time!
 
 Even though we can put CSS in the HTML file, it's inconvenient. We'll be writing a lot of CSS, so let's put it into a separate file. Create a folder `css` inside the `public` folder and then create a file application.css inside `public/css`. Your project structure will look like this.
 
-![appcss](https://github.com/makersacademy/course/raw/master/day_one/images/appcss.png)
+![appcss](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/appcss.png)
 
 Now let's move our CSS code from the HTML file into here. Remove the CSS from index.erb, so that the `<body>` tag has no attributes:
 
@@ -243,7 +235,7 @@ This tells the browser that when rendering this web page, it should use the file
 
 If you refresh the browser now, you should see your background again. This time it will be defined in an external CSS file.
 
-![browser1](https://github.com/makersacademy/course/raw/master/day_one/images/browser_1.png)
+![browser1](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/browser_1.png)
 
 ## Version 3: Adding some logic into the application
 
@@ -259,11 +251,11 @@ Let's start by adding the header section with some text to our HTML file. Put th
 
 Now your webpage should just have one header.
 
-![header](https://github.com/makersacademy/course/raw/master/day_one/images/motivational_header.png)
+![header](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/motivational_header.png)
 
 Let's add some more content. Let's add the first section on our website. The finished section should look like this.
 
-![kitten_select](https://github.com/makersacademy/course/raw/master/day_one/images/kitten_select.png)
+![kitten_select](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/kitten_select.png)
 
 It will have a header, some text, an input box, a button, an area for search results and Google's branding in the lower right corner (required by the terms and conditions of Google Image Search).
 
@@ -288,7 +280,7 @@ Then let's add some text. Let's use the `<p>` tag to add it.
 
 Now your web page looks like this.
 
-![select_image](https://github.com/makersacademy/course/raw/master/day_one/images/select_image.png)
+![select_image](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/select_image.png)
 
 Don't worry that it doesn't look exactly like it'll look at the very end. This is because we haven't added the CSS yet. For now let's make sure we have the elements that we need on the page.
 
@@ -342,7 +334,7 @@ The `<div>` element is just a generic element without any special significance. 
 
 So, this is what our application looks like right now.
 
-![select_image_2](https://github.com/makersacademy/course/raw/master/day_one/images/select_image_2.png)
+![select_image_2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/select_image_2.png)
 
 ### Adding some Javascript
 
@@ -354,7 +346,7 @@ Let's begin by creating one more folder, `public/javascript`, for our javascript
 
 The first file, `support.js` will contain some javascript that we wrote for you for this project. It is slightly more complex than the other stuff, so we'll leave it until the end. This file does two things: actually performs a Google Image Search and saves the parameters of the form in the url, so we could tweet it later without losing out motivational image (we'll get to this functionality later).
 
-For now just take the contents of this file from [Github](https://github.com/makersacademy/course/raw/master/day_one/support.js) and copy-paste it into the `support.js` file in your project - don't worry about using Copy-Paste just this once :). Leave the `application.js` empty for a moment.
+For now just take the contents of this file from [Github](https://github.com/stephenlloyd/Taster/raw/master//day_one/support.js) and copy-paste it into the `support.js` file in your project - don't worry about using Copy-Paste just this once :). Leave the `application.js` empty for a moment.
 
 Now let's link our JS files to the HTML file using a very similar technique that we used to link CSS files to HTML. Add these four lines into the `<head>` section of your index.erb.
 
@@ -458,7 +450,7 @@ $(document).on('click', '#go-search', function() {
 
 Now put the code above into application.js and save the file. Refresh your browser, enter the search term and you'll see the results!
 
-![browser2](https://github.com/makersacademy/course/raw/master/day_one/images/browser_2.png)
+![browser2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/browser_2.png)
 
 Impressive, isn't it? Especially that we did very little work to achieve this result.
 
@@ -632,7 +624,7 @@ Add it right below the first section in index.erb. We're ignoring the CSS for no
 
 Now, if you refresh the page, it will have both sections in it.
 
-![section_2](https://github.com/makersacademy/course/raw/master/day_one/images/section_2.png)
+![section_2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/section_2.png)
 
 ### Adding the workspace
 
@@ -649,7 +641,7 @@ The third section is very similar but slightly more complex. Here's the first bi
 
 There's nothing new here. First we create a new header ("Step 3. Style it!") and then we create a new area (workplace) where our image and its caption will be. Since the caption needs to be on top of the image, let's put inside the workplace. However, since there's nothing inside yet, it will be invisible (just like our search results area was invisible in the first section).
 
-![section_3](https://github.com/makersacademy/course/raw/master/day_one/images/section_3.png)
+![section_3](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/section_3.png)
 
 ### Styling the workspace
 
@@ -668,7 +660,7 @@ This CSS means that the element with the id of "workspace" will have the width o
 
 Now the page looks different. Our workspace is visible: it has dimensions, a border around it and it's centred horizontally.
 
-![css](https://github.com/makersacademy/course/raw/master/day_one/images/css.png)
+![css](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/css.png)
 
 Now it's a good time to add some Javascript to it. We want the image to be loaded into the workspace after it's thumbnail is clicked. Remember how we dealt with the button click event before? This time it will be very similar. Here's the code.
 
@@ -699,7 +691,7 @@ This code sets the width for the image inside the workspace. If you don't do thi
 
 Save all files and refresh your browser. Now, if you search for an image and click one of the results, it will be loaded into the workspace.
 
-![css2](https://github.com/makersacademy/course/raw/master/day_one/images/css_2.png)
+![css2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/css_2.png)
 
 So, loading image into the workspace works. However, what is the extra space between the image and the red border? This is our caption that we put into the workspace but it should be placed on an image, not above it. To fix this, let's add a bit more CSS into application.css.
 
@@ -730,7 +722,7 @@ $(document).on('input', '#text', function() {
 
 This code is waiting until something is typed in the `	#text` element and when it happens, it takes the text from there ( `$(this).val()`) and puts it into `#caption`. This works but the caption is small and hardly noticeable.
 
-![css3](https://github.com/makersacademy/course/raw/master/day_one/images/css_3.png)
+![css3](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/css_3.png)
 
 Let's make it bigger! Add the following CSS.
 
@@ -753,13 +745,13 @@ This makes `#caption` bold, sets the font as red Helvetica size 32, sets the ove
 
 Now the caption is much more noticeable.
 
-![css4](https://github.com/makersacademy/course/raw/master/day_one/images/css_4.png)
+![css4](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/css_4.png)
 
 ### Adding image editing controls
 
 By now our website starts to resemble the end product. Let's add the image editing controls. You've already seen how to add some input elements to enter text. The input elements to enter numbers and drop-down boxes are not that different. So, here's the set of elements we're about to create.
 
-![controls](https://github.com/makersacademy/course/raw/master/day_one/images/controls.png)
+![controls](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/controls.png)
 
 They are just below the workspace on the webpage and they HTML code for them will be just below the `#workspace` element. First, let's add a "container" element with id of "controls" just below the workspace element.
 
@@ -781,7 +773,7 @@ Then let's put the first input for the left offset into the `#controls`.
 
 This creates an input box of type "number" (as opposed to "text" that we've been using so far for keyword and text in the previous sections). This means that it behaves just like the "text" input but it also has two small arrows inside it that allow you to increase or decrease the number. Now our page looks like this.
 
-![controls_2](https://github.com/makersacademy/course/raw/master/day_one/images/controls_2.png)
+![controls_2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/controls_2.png)
 
 Adding other number controls is very similar.
 
@@ -796,7 +788,7 @@ Adding other number controls is very similar.
 
 You can see them on the screen straight away.
 
-![controls_3](https://github.com/makersacademy/course/raw/master/day_one/images/controls_3.png)
+![controls_3](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/controls_3.png)
 
 Adding drop-down boxes is very similar. Drop-down lists are created using the <select> tag with every item in the list defined by the <option> tag inside. Let's add the drop-down list for selecting the colour. Add this inside our #controls area.
 
@@ -815,11 +807,11 @@ Colour: <select id="colour">
 
 If you've done everything correctly, you should see it in your browser.
 
-![controls_4](https://github.com/makersacademy/course/raw/master/day_one/images/controls_4.png)
+![controls_4](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/controls_4.png)
 
 Add the second dropdown box using a very similar code.
 
-![controls_5](https://github.com/makersacademy/course/raw/master/day_one/images/controls_5.png)
+![controls_5](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/controls_5.png)
 
 Now we have all elements that we need for controlling our image but they aren't active yet. Changing the values does nothing to the position or the style of the caption. We'll fix this in a second.
 
@@ -837,7 +829,7 @@ In plain English this means that when the element with an `id` of "left" changes
 
 **Try it!**
 
-![try](https://github.com/makersacademy/course/raw/master/day_one/images/try.png)
+![try](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/try.png)
 
 You can probably write the javascript code for other fields without further help but, just in case, here's the code for other fields.
 
@@ -869,11 +861,11 @@ The last two event handlers don't need "+ 'px'" bit because the colour and align
 
 Now that we've got the main functionality working, let's add the tweet button! Let's get the code for the button from Twitter. Go to google and search for "tweet button code". The first link should point to [Twitter Buttons](https://twitter.com/about/resources/buttons) page.
 
-![twitter](https://github.com/makersacademy/course/raw/master/day_one/images/twitter.png)
+![twitter](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/twitter.png)
 
 Select the first button (share a link) and leave all options default except the tweet text. Set it to "I built a 'Motivational Posters' page today here at @makersacademy!".
 
-![twitter2](https://github.com/makersacademy/course/raw/master/day_one/images/twitter_2.png)
+![twitter2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/twitter_2.png)
 
 On the right you'll see the resulting HTML code that you need. Copy it to the index.erb file right after `#controls` putting it into its own div element with the id of "twitter".
 
@@ -886,7 +878,7 @@ On the right you'll see the resulting HTML code that you need. Copy it to the in
 
 Refresh the page. Now you should see the tweet button below.
 
-![twitter3](https://github.com/makersacademy/course/raw/master/day_one/images/twitter_3.png)
+![twitter3](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/twitter_3.png)
 
 If you click it, you'll notice that the URL of the page isn't included as part of the tweet. This is because Twitter detects that you're using a local url that isn't accessible by other people (that is, you're just running a website on your computer) and doesn't include it. This shouldn't be a problem after you deploy it to Heroku.
 
@@ -909,7 +901,7 @@ Let's add the final section on the page: the footer. Add its HTML code at the ve
 
 Now we can see the footer on the page (but it's still completely un-styled). The reason we're putting un-styled content on the page before writing CSS is that it's easier to write CSS once you have the elements it will apply to. Otherwise you'd be writing CSS in the dark.
 
-![style](https://github.com/makersacademy/course/raw/master/day_one/images/style.png)
+![style](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style.png)
 
 ### Completing the styling
 
@@ -938,7 +930,7 @@ body {
 
 This will make everything in the `<body>` tag (that is, on the page) nicely centred, the text will be grey, the font used will be Helvetica (and if it's not available for some reason, Arial), and the page will not have any margin or padding on the side. You can see the effect straight away.
 
-![style2](https://github.com/makersacademy/course/raw/master/day_one/images/style_2.png)
+![style2](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_2.png)
 
 Now let's add some colour to the header. Add this CSS.
 
@@ -954,7 +946,7 @@ This makes the header get some padding, so the text is not very close to the edg
 
 You can see the result straight away.
 
-![style3](https://github.com/makersacademy/course/raw/master/day_one/images/style_3.png)
+![style3](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_3.png)
 
 Now let's add some styling to the first section (Step 1). It has the id of "select-image". Let's give it some background and some padding, like we've done with the header.
 
@@ -967,7 +959,7 @@ Now let's add some styling to the first section (Step 1). It has the id of "sele
 
 The `rgba(255,255,255,0.3)` means white background with the opacity of 30%.
 
-![style4](https://github.com/makersacademy/course/raw/master/day_one/images/style_4.png)
+![style4](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_4.png)
 
 Awesome, it's beginning to take shape. Let's continue the styling. What about the second section? It needs some colour and padding too. This time let's give it a different colour. If we mix green and blue but leave out red, then the result will be an aqua (greenish-blue) colour. Let's set this background with a very low opacity, to show just a shade of this colour.
 
@@ -979,7 +971,7 @@ Awesome, it's beginning to take shape. Let's continue the styling. What about th
 }
 ````
 
-![style5](https://github.com/makersacademy/course/raw/master/day_one/images/style_5.png)
+![style5](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_5.png)
 
 Let's also make the input box wider and set the alignment to "center".
 
@@ -990,7 +982,7 @@ Let's also make the input box wider and set the alignment to "center".
 }
 ````
 
-![style6](https://github.com/makersacademy/course/raw/master/day_one/images/style_6.png)
+![style6](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_6.png)
 
 Let's also make our button and all the input fields slightly larger by increasing the size of the font.
 
@@ -1000,7 +992,7 @@ input, button {
 }
 ````
 
-![style7](https://github.com/makersacademy/course/raw/master/day_one/images/style_7.png)
+![style7](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_7.png)
 
 Now the only section left un-styled is "Step 3" (apart from the footer). Let's add some padding, background and shadow to it as well.
 
@@ -1012,7 +1004,7 @@ Now the only section left un-styled is "Step 3" (apart from the footer). Let's a
 }
 ````
 
-![style8](https://github.com/makersacademy/course/raw/master/day_one/images/style_8.png)
+![style8](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_8.png)
 
 Now the section itself looks a little bit better but the contents are a mess. Let's style the controls.
 
@@ -1035,7 +1027,7 @@ input[type="number"] {
 
 And now it looks exactly like we want it to be.
 
-![style9](https://github.com/makersacademy/course/raw/master/day_one/images/style_9.png)
+![style9](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_9.png)
 
 Finally, the footer. The content is there but it looks all over the place. First, the familiar tricks: background, shadows, padding, text alignment.
 
@@ -1078,7 +1070,7 @@ footer div {
 
 Cool! Now our footer looks much more organised.
 
-![style10](https://github.com/makersacademy/course/raw/master/day_one/images/style_10.png)
+![style10](https://github.com/stephenlloyd/Taster/raw/master//day_one/images/style_10.png)
 
 **And, we're done with the styling!**
 
